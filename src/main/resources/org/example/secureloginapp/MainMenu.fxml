@@ -34,7 +34,7 @@
         </VBox>
     </center>
     <bottom>
-        <Label text="CSC411 Spring 2025 [Your Name]" BorderPane.alignment="CENTER">
+        <Label text="CSC411 Spring 2025 Efe Eryildiz" BorderPane.alignment="CENTER">
             <BorderPane.margin>
                 <Insets bottom="10.0" />
             </BorderPane.margin>
