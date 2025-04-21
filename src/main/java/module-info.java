@@ -11,7 +11,11 @@ module org.example.secureloginapp {
     requires eu.hansolo.tilesfx;
     requires com.almasb.fxgl.all;
     requires java.sql;
+    requires org.junit.jupiter.api;
+    requires org.junit.platform.commons;
+    requires org.junit.platform.engine;
+    requires org.junit.platform.launcher;
 
-    opens org.example.secureloginapp to javafx.fxml;
+    opens org.example.secureloginapp to javafx.fxml, org.junit.platform;
     exports org.example.secureloginapp;
 }
