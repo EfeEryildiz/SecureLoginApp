@@ -29,10 +29,8 @@ public class SecureLoginApp extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(SecureLoginApp.class.getResource(fxml));
         primaryStage.getScene().setRoot(fxmlLoader.load());
         
-        // Get the controller after loading the FXML
         Object controller = fxmlLoader.getController();
         
-        // If the controller is MainMenuController and passed data is User
         if (controller instanceof MainMenuController && controllerData instanceof User) {
             MainMenuController mainMenuController = (MainMenuController) controller;
             mainMenuController.setUser((User) controllerData);

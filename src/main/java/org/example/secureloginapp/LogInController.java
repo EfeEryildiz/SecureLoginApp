@@ -52,7 +52,6 @@ public class LogInController {
                 password, user.getPasswordHash(), user.getSalt());
 
         if (isPasswordValid) {
-            // Pass user object to setRoot method
             SecureLoginApp.setRoot("MainMenu.fxml", user);
         } else {
             showAlert("Invalid password");
